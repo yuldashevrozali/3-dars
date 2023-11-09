@@ -24,6 +24,8 @@ btn.addEventListener('click', function () {
         let li = document.createElement("li");
     }
 
-
-
+    const ul = document.getElementById('ul');
+    let li = document.createElement('li');
+    li.setAttribute('id', 'todo_' + todo.id);
+    ul.appendChild(li);
 })

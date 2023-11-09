@@ -2,6 +2,7 @@ const btn = document.getElementById('btn');
 const form = document.getElementById('form');
 const email = document.getElementById('email');
 const Age = document.getElementById('number');
+
 btn.addEventListener('click', function () {
 
     if (form.value && email.value && Age.value) {
@@ -14,11 +15,15 @@ btn.addEventListener('click', function () {
         data.push(todo);
 
         form.value = '';
+        Age.value = '';
+        email.value = '';
 
         localStorage.setItem('todo', JSON.stringify(data));
-    } 
-    alert("Bo'sh maydon bo'lmasligi zarur");
-    let li = document.createElement("li");
-    
+    } else{
+        alert("Bo'sh maydon bo'lmasligi zarur");
+        let li = document.createElement("li");
+    }
+
+
 
 })

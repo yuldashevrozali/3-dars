@@ -12,7 +12,7 @@ btn.addEventListener('click', function () {
         todo.text = (form.value);
         todo.text3 = "Ismi ";
         todo.text2 = email.value;
-        todo.text4 = "E-pochtasi "
+        todo.text4 = "  E-pochtasi "
         todo.status = 'active';
         data.push(todo);
 
